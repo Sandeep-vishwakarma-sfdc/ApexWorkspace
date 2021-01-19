@@ -58,7 +58,7 @@ public with sharing class PrepareObjects{
         List<Task> tasks = [SELECT Id,OwnerId,whatId,status,Subject,Type from Task where OwnerId=:userInfo.getuserId() and Type='Other' and Isclosed = False and Subject = 'Assign Primary contact'];
 
         System.assertEquals(ops.size(),tasks.size());
-
+        
         Test.stopTest();
         validateOCRs(ops);
     }
