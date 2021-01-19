@@ -60,6 +60,6 @@ public with sharing class PrepareObjects{
         System.assertEquals(ops.size(),tasks.size());
         
         Test.stopTest();
-        validateOCRs(ops);
+        validateOCRs(ops); // new Changes
     }
 }
